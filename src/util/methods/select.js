@@ -1,4 +1,4 @@
-const { chunk } = require("../Util");
+const { chunk } = require('../Util');
 
 module.exports = (ast, db) => {
     if (ast.type.toLowerCase() !== 'select') throw new TypeError('invalid query type');
