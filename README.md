@@ -32,6 +32,12 @@ db.prepare(`SELECT * FROM "DEMO"`).run();
 // fetching data in limit
 db.prepare(`SELECT * FROM "DEMO" LIMIT 3`).run(); // returns 3 items if available
 
+// update existing data
+db.prepare(`UPDATE "DEMO" SET "json" = "test data" WHERE "key" = "test_key"`).run()
+
+// delete specific item
+db.prepare(`DELETE FROM "DEMO" WHERE "key" = "test_key"`).run();
+
 // drop a table
 db.prepare(`DROP TABLE "DEMO"`).run();
 ```
