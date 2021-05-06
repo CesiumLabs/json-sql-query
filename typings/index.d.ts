@@ -3,12 +3,15 @@ import { AST } from 'node-sql-parser';
 declare module '@devsnowflake/jsql' {
     export interface Handlers {
         create: (q: AST, db: Database) => void;
-        select: (q: AST, db: Database) => any[];
+        select: (q: AST, db: Database) => SelectOperation[] & ParseFunction;
         insert: (q: AST, db: Database) => void;
         drop: (q: AST, db: Database) => boolean;
         update: (q: AST, db: Database) => void;
         delete: (q: AST, db: Database) => void;
     }
+
+    export type SelectOperation = any[];
+    export type ParseFunction = () => any[];
 
     export interface DatabasePrepare {
         ast: AST | AST[];
