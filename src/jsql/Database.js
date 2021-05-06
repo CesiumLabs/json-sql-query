@@ -5,6 +5,7 @@ const handlers = {
     select: require('../util/methods/select'),
     insert: require('../util/methods/insert'),
     drop: require('../util/methods/drop'),
+    update: require('../util/methods/update'),
 };
 
 class Database {
