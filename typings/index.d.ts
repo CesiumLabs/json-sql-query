@@ -1,6 +1,6 @@
 import { AST } from 'node-sql-parser';
 
-declare module 'jsql' {
+declare module '@devsnowflake/jsql' {
     export interface Handlers {
         create: (q: AST, db: Database) => void;
         select: (q: AST, db: Database) => any[];
