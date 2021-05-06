@@ -1,10 +1,10 @@
-# JSQL
-Use **JSON** as **SQL**.
+# JSON SQL Query
+Use **CRUD** operations on **JSON** with **SQL** queries.
 
 # Installing
 
 ```sh
-$ npm i --save @devsnowflake/jsql
+$ npm i --save json-sql-query
 ```
 
 > Note: This library is very new and does not support most of the statements
@@ -12,7 +12,7 @@ $ npm i --save @devsnowflake/jsql
 # Example
 
 ```js
-const { Database } = require("@devsnowflake/jsql");
+const { Database } = require("json-sql-query");
 
 // file based
 const db = new Database("./database.json");

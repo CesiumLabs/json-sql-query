@@ -1,7 +1,7 @@
 {
-  "name": "@devsnowflake/jsql",
-  "version": "1.0.5",
-  "description": "Use JSON as SQL.",
+  "name": "json-sql-query",
+  "version": "2.0.0",
+  "description": "Use CRUD operations on JSON with SQL queries.",
   "main": "index.js",
   "types": "typings/index.d.ts",
   "scripts": {
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DevSnowflake/JSQL.git"
+    "url": "git+https://github.com/DevSnowflake/json-sql-query.git"
   },
   "keywords": [
     "JSQL",
@@ -23,12 +23,20 @@
     "Database",
     "JavaScript",
     "JSON",
-    "JSONSQL"
+    "JSONSQL",
+    "sql-to-json",
+    "json-to-sql",
+    "nosql-to-sql",
+    "sql-to-nosql",
+    "simple-sql",
+    "sql2json",
+    "json2sql",
+    "json.sqlite"
   ],
   "bugs": {
-    "url": "https://github.com/DevSnowflake/JSQL/issues"
+    "url": "https://github.com/DevSnowflake/json-sql-query/issues"
   },
-  "homepage": "https://github.com/DevSnowflake/JSQL#readme",
+  "homepage": "https://github.com/DevSnowflake/json-sql-query#readme",
   "devDependencies": {
     "prettier": "^2.2.1"
   }
