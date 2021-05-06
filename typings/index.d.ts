@@ -2,10 +2,12 @@ import { AST } from 'node-sql-parser';
 
 declare module 'jsql' {
     export interface Handlers {
-        create: (q: AST) => void;
-        select: (q: AST) => any[];
-        insert: (q: AST) => void;
-        drop: (q: AST) => boolean;
+        create: (q: AST, db: Database) => void;
+        select: (q: AST, db: Database) => any[];
+        insert: (q: AST, db: Database) => void;
+        drop: (q: AST, db: Database) => boolean;
+        update: (q: AST, db: Database) => void;
+        delete: (q: AST, db: Database) => void;
     }
 
     export interface DatabasePrepare {
@@ -16,10 +18,10 @@ declare module 'jsql' {
 
     export type Statement = string | AST | AST[];
 
-    export class SQLParser {
-        static parse(statement: string): AST | AST[];
-        static stringify(statement: AST | AST[]): string;
-        static validate(statement: string): boolean;
+    export interface SQLParser {
+        parse: (statement: string) => AST | AST[];
+        stringify: (statement: AST | AST[]) => string;
+        validate: (statement: string) => boolean;
     }
 
     export class Database {
