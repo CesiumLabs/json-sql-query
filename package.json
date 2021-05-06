@@ -1,0 +1,35 @@
+{
+  "name": "jsql",
+  "version": "1.0.0",
+  "description": "Use JSON as SQL.",
+  "main": "index.js",
+  "types": "typings/index.d.ts",
+  "scripts": {
+    "test": "cd test && node index.js",
+    "format": "prettier --write */**"
+  },
+  "author": "Snowflake107",
+  "license": "MIT",
+  "dependencies": {
+    "node-sql-parser": "^3.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevSnowflake/JSQL.git"
+  },
+  "keywords": [
+    "JSQL",
+    "SQL",
+    "Database",
+    "JavaScript",
+    "JSON",
+    "JSONSQL"
+  ],
+  "bugs": {
+    "url": "https://github.com/DevSnowflake/JSQL/issues"
+  },
+  "homepage": "https://github.com/DevSnowflake/JSQL#readme",
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  }
+}
