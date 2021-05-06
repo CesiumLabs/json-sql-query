@@ -1,7 +1,6 @@
-import { AST } from "node-sql-parser"
+import { AST } from 'node-sql-parser';
 
-declare module "jsql" {
-
+declare module 'jsql' {
     export interface Handlers {
         create: (q: AST) => void;
         select: (q: AST) => any[];
@@ -24,7 +23,8 @@ declare module "jsql" {
     }
 
     export class Database {
-        constructor(name: string);
+        memory: boolean;
+        constructor(name: string, memory?: boolean);
         get db(): any;
         static get handlers(): Handlers;
         write(data: any): void;
@@ -32,5 +32,4 @@ declare module "jsql" {
         prepare(query: Statement): DatabasePrepare;
         parse(statement: Statement): string;
     }
-
 }

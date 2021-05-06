@@ -13,7 +13,12 @@ $ npm i --save @devsnowflake/jsql
 
 ```js
 const { Database } = require("@devsnowflake/jsql");
+
+// file based
 const db = new Database("./database.json");
+
+// in-memory
+const db = new Database(":memory:");
 
 // creating a table
 db.prepare(`CREATE TABLE IF NOT EXISTS "DEMO" ("key" TEXT, "value" TEXT)`).run();
