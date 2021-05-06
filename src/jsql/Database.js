@@ -1,10 +1,10 @@
 const sql = require('../sql/parser');
 const fs = require('fs');
 const handlers = {
-    create: require('../util/create'),
-    select: require('../util/select'),
-    insert: require('../util/insert'),
-    drop: require('../util/drop'),
+    create: require('../util/methods/create'),
+    select: require('../util/methods/select'),
+    insert: require('../util/methods/insert'),
+    drop: require('../util/methods/drop'),
 };
 
 class Database {
