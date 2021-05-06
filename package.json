@@ -1,5 +1,5 @@
 {
-  "name": "jsql",
+  "name": "@devsnowflake/jsql",
   "version": "1.0.0",
   "description": "Use JSON as SQL.",
   "main": "index.js",

@@ -4,7 +4,7 @@ Use **JSON** as **SQL**.
 # Installing
 
 ```sh
-$ npm i --save jsql
+$ npm i --save @devsnowflake/jsql
 ```
 
 > Note: This library is very new and does not support most of the statements
@@ -12,7 +12,7 @@ $ npm i --save jsql
 # Example
 
 ```js
-const { Database } = require("jsql");
+const { Database } = require("@devsnowflake/jsql");
 const db = new Database("./database.json");
 
 // creating a table
