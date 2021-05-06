@@ -1,8 +1,3 @@
-/**
- *
- * @param {*} ast
- * @param {import("../jsql/Database")} db
- */
 module.exports = (ast, db) => {
     if (ast.type.toLowerCase() !== 'create') throw new TypeError('invalid query type');
     if (ast.keyword !== 'table') throw new Error(`Unsupported ${ast.keyword}`);

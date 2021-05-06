@@ -1,8 +1,3 @@
-/**
- *
- * @param {*} ast
- * @param {import("../jsql/Database")} db
- */
 module.exports = (ast, db) => {
     if (ast.type.toLowerCase() !== 'insert') throw new TypeError('invalid query type');
     const table = ast.table[0].table;
